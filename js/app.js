@@ -1,32 +1,50 @@
-// array 
+//accessing array elements
 
-//by using array constructor
+//const fruits = ['mango', 'banana', 'orange', 'lemon', 'kiwi'];
 
-// const arr = new Array(1, 2, 3 , 4, 5, 'Deep', true, 4.3);
+// console.log(fruits[0]);
+// console.log(fruits.length);
 
-//  console.log(arr);
-
-//using square brackets[]
-
-// const data=['ram', true, 5.5, 1 ,2 ,3 ,4, null, undefined];
-
+// //modifying array elements 
+// fruits[1] = 'apple';
+// fruits[2] = 'papaya';
 
 
-// console.log(data)
 
-// document.write(data+'<br>'+'number of elements in array='+data.length);
+// //getting index of elements
 
-//using split
+// console.log(fruits.indexOf('lemon'));
 
-// let name='Deependra Adhikari';
-// const arrName=name.split('');
+// console.log(fruits.indexOf('kiwi'));
 
-// console.log(name);
+// console.log(fruits.indexOf('apple'));
 
-// console.log(arrName);
-//document.write(arrName);
+// console.log(fruits.indexOf('mango'));
 
-let fruits='mango, banana, apple, kiwi';
+// //to check if an item exist
+
+// console.log(fruits.includes('geraps'))
+
+const fruits = ['mango', 'banana', 'orange', 'lemon', 'kiwi'];
+
+//adding item to array using push
+
+fruits.push('new fruit'); //add to end
+
+fruits.unshift('very new fruit'); // add to first
+
+fruits.pop(); //remove last item
+fruits.shift(); //remove first item
+
+
+
+fruits.sort(); //to sort the array elemets in assending order
+
+fruits.reverse(); // to reverse the array
+
 console.log(fruits);
-const fruitarray = fruits.split(',');
-console.log(fruitarray);
+
+for (var i = 0; i < fruits.length; i++) {
+document.write(fruits[i]+'<br/>');
+}
+	
